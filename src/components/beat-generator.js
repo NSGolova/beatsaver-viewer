@@ -368,11 +368,11 @@ AFRAME.registerComponent('beat-generator', {
         this.stageColors.setColor('floor', event._value);
         break;
       case 8:
-        this.twister.components.twister.pulse(event._value);
+        // this.twister.components.twister.pulse(event._value);
         break;
       case 9:
         // zoom was a bit disturbing
-        this.twister.components.twister.pulse(event._value);
+        // this.twister.components.twister.pulse(event._value);
         break;
       case 12:
         this.leftStageLasers.components['stage-lasers'].pulse(event._value);
