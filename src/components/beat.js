@@ -19,11 +19,17 @@ const SCORE_POOL = {
 };
 
 function getHorizontalPosition (lineIndex) {
-  return lineIndex / 3 * 1.5 - 0.75
+  return (-(4 - 1) * 0.5 + lineIndex) * 0.6;// lineIndex / 3 * 1.5 - 0.75
 }
 
 function getVerticalPosition (lineLayer) {
-  return lineLayer / 2 + 0.7;
+  if (lineLayer == 0) {
+    return 0.85
+  } else if (lineLayer == 1) {
+    return 1.4
+  } else {
+    return 1.9
+  }
 }
 
 /**
